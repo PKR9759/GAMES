@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <style>
+    button:hover {
+      background-color: yellow;
+    }
+    .buttons{
+      margin-left: 20px;
+      padding:25px;
+     
+    }
+  </style>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>replit</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <p>Chose Among One !!</p>
+  <br><br>
+  <button class='buttons' onclick="fun('st')"> Stone </button>
+  <button class='buttons' onclick="fun('p')"> Paper </button>
+  <button class='buttons' onclick="fun('s')"> Seasor </button>
+  <script src="script.js"></script>
+
+  <!--
+  This script places a badge on your repl's full-browser view back to your repl's cover
+  page. Try various colors for the theme: dark, light, red, orange, yellow, lime, green,
+  teal, blue, blurple, magenta, pink!
+  -->
+  <script>
+    let is;
+    
+      let ran = Math.floor(Math.random() * 3);
+      let picks;
+      if (ran == 0) {
+        picks = 'Stone';
+      }
+      else if (ran == 1) {
+        picks = 'Paper';
+      }
+      else {
+        picks = 'Seasor';
+      }
+      let name;
+      function fun(name) {
+
+        document.write("<br> <br>Computer Picks: " + picks +"<br><br> ");
+        
+        if (name == 'st') {
+          if (ran == 0) {
+            document.write(" !!! Tie !!!");
+          }
+          else if (ran == 1) {
+            document.write(" !!! You Lose !!!");
+
+          }
+          else {
+            document.write(" !!! Congartulations ! You  Win !!!");
+
+          }
+        }
+        else if (name == 's') {
+          if (ran == 2) {
+            document.write(" !!! Tie !!!");
+          }
+          else if (ran == 0) {
+            document.write(" !!! You Lose !!!");
+
+          }
+          else {
+            document.write(" !!! Congartulations ! You  Win !!!");
+
+          }
+        }
+        else {
+          if (ran == 1) {
+            document.write(" !!! Tie !!!");
+          }
+          else if (ran == 2) {
+            document.write(" !!! You Lose !!!");
+
+          }
+          else {
+            document.write(" !!! Congartulations ! You  Win !!!");
+
+          }
+          
+        }
+          
+      }
+      
+    
+  </script>
+</body>
+
+</html>
